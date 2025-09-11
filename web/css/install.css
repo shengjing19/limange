@@ -1,0 +1,308 @@
+/*
+* install样式表
+* by shengjing19
+* create 2025-08-01
+* last modify
+* v1.0*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #e6f3fb, #eaf3f7 18%, #f7f7f3 38%, #e9ecef 60%, #dbe3ea 80%, #d3dde6) !important;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.install-container {
+    width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.install-header {
+    background: #f8f9fa;
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.header-text h1 {
+    font-size: 22px;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.install-body {
+    display: flex;
+    min-height: 450px;
+}
+
+.sidebar {
+    width: 200px;
+    background: #f1f3f5;
+    padding: 30px 20px;
+    border-right: 1px solid #e9ecef;
+}
+
+.step-item {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: default;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.step-item.active {
+    background: #e7f5ff;
+    color: #228be6;
+    font-weight: 500;
+}
+
+.step-item.completed:before {
+    content: "✓";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #40c057;
+}
+
+.step-content {
+    flex: 1;
+    padding: 30px;
+    position: relative;
+}
+
+.step-title {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.step-description {
+    color: #495057;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #228be6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 139, 230, 0.15);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.install-footer {
+    padding: 20px 30px;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn-primary {
+    background: #228be6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1971c2;
+}
+
+.btn-secondary {
+    background: #e9ecef;
+    color: #495057;
+}
+
+.btn-secondary:hover {
+    background: #dee2e6;
+}
+
+.btn:disabled {
+    background: #e9ecef;
+    color: #adb5bd;
+    cursor: not-allowed;
+}
+
+.progress-container {
+    background: #f1f3f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #40c057;
+    border-radius: 5px;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 14px;
+    color: #495057;
+    font-weight: 500;
+}
+
+.install-log {
+    background: #1c2330;
+    color: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    height: 250px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.log-entry {
+    margin-bottom: 8px;
+    padding: 5px;
+    border-left: 3px solid #228be6;
+    padding-left: 10px;
+}
+
+.success {
+    color: #40c057;
+}
+
+.error {
+    color: #fa5252;
+}
+
+.completed-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.completed-icon {
+    font-size: 80px;
+    color: #40c057;
+    margin-bottom: 20px;
+}
+
+.completed-message {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.completed-info {
+    color: #495057;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*页面左下角版本信息*/
+.version-info{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1001; /* 确保显示在模糊层上方 */
+    color: #333;
+    font-size: 14px;
+    opacity: 0.9; /* 轻微透明 */
+    text-shadow: 0 1px 1px rgba(255,255,255,0.7); /* 文字阴影增强可读性 */
+}
+/* 通知样式 */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    z-index: 1001;
+    transition: opacity 0.5s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background: rgba(220, 53, 69, 0.9);
+}

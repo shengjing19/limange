@@ -1,0 +1,72 @@
+<!--
+禁止访问页面(静态HTML)
+by shengjing19
+create 2025-07-25
+last modify 2025-08-23
+v1.1
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>禁止访问</title>
+    <style>
+        .main{
+            display: flex;
+            align-items:center ;
+            justify-content: center;
+            /*min-height: 100%;*/
+        }
+        .left{
+            margin: 0;
+        }
+        .left img{
+            height: 140%;
+            width: 140%;
+        }
+        .right{
+            margin-left: 120px;
+        }
+        .right span{
+            font-size: 30px;
+            color: #78829d;
+        }
+        .right button{
+            margin-top: 25px;
+            border-radius: 5px;
+            border: 0;
+            width: 140px;
+            height: 50px;
+            background-color: #60c041;
+            color: #fff;
+        }
+        /*页面左下角版本信息*/
+        .version-info{
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            z-index: 1001; /* 确保显示在模糊层上方 */
+            color: #333;
+            font-size: 14px;
+            opacity: 0.9; /* 轻微透明 */
+            text-shadow: 0 1px 1px rgba(255,255,255,0.7); /* 文字阴影增强可读性 */
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <img src="./img/403_v2.png" alt="禁止访问">
+    </div>
+    <div class="right">
+        <span>抱歉，您无权访问该<br>页面</span><br>
+        <a href="./login.jsp"><button>返回登录</button></a>
+    </div>
+</div>
+
+<div class="version-info">
+    <!--获取版权信息-->
+    <span>2020-2025 笙箫旧景 All rights reserved</span><br>
+</div>
+</body>
+</html>

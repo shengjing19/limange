@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="limange:Web exploded">
+    <output-path>C:/Apps/apache-tomcat-9.0.91/webapps/limange</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="limange/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="limange" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
