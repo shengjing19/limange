@@ -7,9 +7,9 @@ limange是一个用于记录你所看完的动漫的信息的Web应用程序
 
 |                           1                            |                           2                           |
 | :----------------------------------------------------: | :---------------------------------------------------: |
-| <img width="1624" alt="Light Theme" src="./IMG/1.png"> | <img width="1624" alt="Dark Theme" src="./IMG/2.png"> |
-| <img width="1624" alt="Light Theme" src="./IMG/3.png"> | <img width="1624" alt="Dark Theme" src="./IMG/4.png"> |
-| <img width="1624" alt="Light Theme" src="./IMG/5.png"> | <img width="1624" alt="Light Theme" src="./IMG/6.png">|
+| <img width="1624" alt="Light Theme" src="./img/1.png"> | <img width="1624" alt="Dark Theme" src="./img/2.png"> |
+| <img width="1624" alt="Light Theme" src="./img/3.png"> | <img width="1624" alt="Dark Theme" src="./img/4.png"> |
+| <img width="1624" alt="Light Theme" src="./img/5.png"> | <img width="1624" alt="Light Theme" src="./img/6.png">|
 
 ## 结构及部分介绍
 
@@ -57,4 +57,5 @@ limange是一个用于记录你所看完的动漫的信息的Web应用程序
 2.本Web程序的前端UI界面仅支持电脑端，移动端未进行前端适配
 3.本Web程序的前端交互与接口调用依赖于js，使用AJAX进行前后端分离，除部分页面逻辑需要Java控制外，其余主要数据获取与修改均已前后端分离(install.jsp除外，install.jsp完全独立)
 4.使用IDEA编写，提供的编译版本请使用JDK-23版本运行
+
 
