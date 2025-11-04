@@ -76,7 +76,21 @@
 
 * [下载软件最新版已编译版本](https://github.com/shengjing19/limange/releases) 
 
-提示：需要JDK-23版本 推荐tomcat 9.0.91及以上版本
+* **自动化部署脚本**
+  *Debian或Ubuntu*
+
+  ```
+  sudo wget -O install_limange-v1.sh https://raw.githubusercontent.com/shengjing19/limange/refs/heads/master/install_limange-v1.sh && sudo bash install_limange-v1.sh
+  ```
+
+  *CentOS*
+
+  ```
+  sudo curl -O  https://raw.githubusercontent.com/shengjing19/limange/refs/heads/master/install_limange-v1.sh && sudo bash  install_limange-v1.sh
+  ```
+
+  提示：需要JDK-23版本 推荐tomcat 9.0.91及以上版本
+
 
 ---
 > install.jsp
